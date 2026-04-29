@@ -1,0 +1,50 @@
+.top-bar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  background: white;
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.home-btn {
+  padding: 0.5rem 1rem;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.home-btn:hover {
+  background: #1d4ed8;
+}
+
+.project-title {
+  margin: 0;
+  flex: 1;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.spacer {
+  width: 100px;
+}
+
+@media (max-width: 768px) {
+  .top-bar {
+    padding: 0.5rem 0.75rem;
+  }
+
+  .project-title {
+    font-size: 0.95rem;
+  }
+
+  .spacer {
+    width: 50px;
+  }
+}

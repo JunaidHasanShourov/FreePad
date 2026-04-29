@@ -1,0 +1,277 @@
+/* App Header Component Styles */
+
+.app-header {
+  background: linear-gradient(90deg, #2563eb 0%, #1e40af 100%);
+  color: white;
+  padding: 0.75rem 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 3px solid #1e3a8a;
+}
+
+.header-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 0 0.5rem;
+}
+
+/* Brand Section */
+.header-brand {
+  flex-shrink: 0;
+}
+
+.brand-name {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin: 0;
+  color: #fff;
+  letter-spacing: -0.5px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Creator Info Section */
+.header-creator {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.creator-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.creator-badge:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.creator-label {
+  font-size: 0.75rem;
+  opacity: 0.8;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+
+.creator-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.creator-org {
+  font-size: 0.8rem;
+  opacity: 0.9;
+  font-style: italic;
+  font-weight: 500;
+}
+
+/* Social Links Section */
+.header-social {
+  flex-shrink: 0;
+}
+
+.social-icons-bar {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.social-icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.2rem;
+  height: 2.2rem;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  font-size: 1.1rem;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+}
+
+.social-icon-link:hover {
+  background: rgba(255, 255, 255, 0.35);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.social-icon-link:active {
+  transform: translateY(0);
+}
+
+/* Tablet Responsive */
+@media (max-width: 1024px) {
+  .header-container {
+    gap: 1.5rem;
+    padding: 0 0.25rem;
+  }
+
+  .creator-badge {
+    padding: 0.5rem 1rem;
+  }
+
+  .creator-name {
+    font-size: 0.95rem;
+  }
+
+  .creator-org {
+    font-size: 0.75rem;
+  }
+
+  .social-icons-bar {
+    gap: 0.4rem;
+  }
+
+  .social-icon-link {
+    width: 2rem;
+    height: 2rem;
+    font-size: 1rem;
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .app-header {
+    padding: 0.6rem 0.5rem;
+  }
+
+  .header-container {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .brand-name {
+    font-size: 1.3rem;
+  }
+
+  .creator-badge {
+    padding: 0.4rem 0.8rem;
+  }
+
+  .creator-label {
+    font-size: 0.7rem;
+  }
+
+  .creator-name {
+    font-size: 0.9rem;
+  }
+
+  .creator-org {
+    font-size: 0.7rem;
+  }
+
+  .social-icons-bar {
+    gap: 0.3rem;
+  }
+
+  .social-icon-link {
+    width: 1.8rem;
+    height: 1.8rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Extra Small Mobile */
+@media (max-width: 480px) {
+  .app-header {
+    padding: 0.5rem 0.25rem;
+  }
+
+  .header-container {
+    gap: 0.5rem;
+  }
+
+  .brand-name {
+    font-size: 1.1rem;
+  }
+
+  .creator-badge {
+    padding: 0.3rem 0.6rem;
+  }
+
+  .creator-label {
+    display: none;
+  }
+
+  .creator-name {
+    font-size: 0.8rem;
+  }
+
+  .creator-org {
+    font-size: 0.65rem;
+  }
+
+  .social-icons-bar {
+    gap: 0.25rem;
+  }
+
+  .social-icon-link {
+    width: 1.6rem;
+    height: 1.6rem;
+    font-size: 0.8rem;
+  }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  .app-header {
+    background: linear-gradient(90deg, #1e3a8a 0%, #0f172a 100%);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .creator-badge {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .creator-badge:hover {
+    background: rgba(255, 255, 255, 0.15);
+  }
+
+  .social-icon-link {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .social-icon-link:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.4);
+  }
+}
+
+/* Animation for header entrance */
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.app-header {
+  animation: slideDown 0.5s ease-out;
+}

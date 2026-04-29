@@ -1,0 +1,57 @@
+.export-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.export-panel {
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.15);
+  width: 90%;
+  max-width: 400px;
+}
+
+.export-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.export-header h2 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.export-options {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.export-option {
+  padding: 1rem;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+}
+
+.export-option:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}

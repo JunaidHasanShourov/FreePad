@@ -1,0 +1,44 @@
+{
+  "name": "freepad",
+  "version": "1.0.0",
+  "description": "FreePad - Free writing and drawing web app for everyone",
+  "author": {
+    "name": "Junaid Hasan Shourov",
+    "url": "https://github.com/JunaidHasanShourov"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint src --ext .js,.jsx",
+    "format": "prettier --write \"src/**/*.{js,jsx,css}\""
+  },
+  "dependencies": {
+    "html2canvas": "^1.4.1",
+    "jspdf": "^2.5.1",
+    "jszip": "^3.10.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.0.0",
+    "eslint": "^8.49.0",
+    "prettier": "^3.0.3",
+    "terser": "^5.46.2",
+    "vite": "^4.4.9"
+  },
+  "keywords": [
+    "drawing",
+    "writing",
+    "free",
+    "cross-platform",
+    "web-app"
+  ],
+  "author": "FreePad Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourUsername/freepad"
+  }
+}
