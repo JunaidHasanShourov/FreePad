@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # FreePad
 
 <div align="center">
@@ -63,7 +62,7 @@ A lightweight, fast, and feature-rich web application for writing and drawing, d
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/yourusername/freepad.git
+git clone https://github.com/junaidhasanshourov/freepad.git
 cd freepad
 ```
 
@@ -238,7 +237,7 @@ We welcome contributions! Here's how you can help:
 ### Development Setup
 
 1. Fork the repository
-2. Clone your fork: `git clone https://github.com/yourusername/freepad.git`
+2. Clone your fork: `git clone https://github.com/junaidhasanshourov/freepad.git`
 3. Create a branch: `git checkout -b feature/your-feature`
 4. Install dependencies: `npm install`
 5. Start development: `npm run dev`
@@ -384,12 +383,8 @@ netlify deploy --prod --dir=dist
 
 **Made with ❤️ for everyone**
 
-*FreePad - Free for all* | MIT License | [GitHub](https://github.com/yourusername/freepad)
+*FreePad - Free for all* | MIT License | [GitHub](https://github.com/junaidhasanshourov/freepad)
 
 </div>
 =======
 # FreePad
->>>>>>> cac584b3f0dd2953e22209780087226a9b4a2574
-#   F r e e P a d  
- #   F r e e P a d  
- 
